@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
   },
   networks: {
     sepolia: {
-      url: "https://rpc2.sepolia.org",
+      url: "https://eth-sepolia.public.blastapi.io",
       accounts: ["b28cdbbc81d46f0b68b2d56bbb6720f4d0a40dd2577f077b9b11a7ff9b1defef"],
     }
   },
