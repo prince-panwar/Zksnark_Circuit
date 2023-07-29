@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "dotenv/config"
 // https://github.com/projectsophon/hardhat-circom
 import "hardhat-circom";
 // circuits
@@ -21,6 +22,12 @@ const config: HardhatUserConfig = {
         version: "0.6.11",
       }
     ]
+  },
+  networks: {
+    sepolia: {
+      url: "https://rpc2.sepolia.org",
+      accounts: ["b28cdbbc81d46f0b68b2d56bbb6720f4d0a40dd2577f077b9b11a7ff9b1defef"],
+    }
   },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
